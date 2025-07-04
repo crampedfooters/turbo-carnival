@@ -1,0 +1,1 @@
+const c=document.createElement('div'),i=document.createElement('input'),b=document.createElement('button');i.type='password';b.textContent='Show';b.onclick=()=>{i.type=i.type==='password'?'text':'password';b.textContent=i.type==='password'?'Show':'Hide';};c.append(i,b);document.body.appendChild(c);
