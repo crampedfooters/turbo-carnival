@@ -1,0 +1,1 @@
+const data=['Apple','Banana','Orange','Mango','Peach','Grape'],i=document.createElement('input'),l=document.createElement('ul');i.placeholder='Search fruits...';i.oninput=()=>{l.innerHTML='';data.filter(x=>x.toLowerCase().includes(i.value.toLowerCase())).forEach(f=>{const item=document.createElement('li');item.textContent=f;l.appendChild(item);});};document.body.append(i,l);
