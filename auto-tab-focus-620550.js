@@ -1,0 +1,1 @@
+const inputs=[...Array(4)].map(()=>{const i=document.createElement('input');i.maxLength=1;i.style.width='2ch';i.oninput=()=>{if(i.value)i.nextElementSibling?.focus();};return i;});inputs.forEach(i=>document.body.appendChild(i));
